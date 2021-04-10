@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '8a@t@4^4kq8&p7a&3np8_$png&*t=u5pv*a!i8msec7+#=xi4-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['iulforum.azurewebsites.net', '127.0.0.1']
 
