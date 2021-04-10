@@ -1,0 +1,124 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block title %}Iul Forum {% endblock  %}
+{% block home_active %} active {% endblock home_active %}
+
+
+  {% block carousel %}
+
+     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static "images/iul2.jpg" %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static "images/iul3.jpg" %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static "images/iul4.jpg" %}" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  {% endblock  %}
+
+ 
+
+
+{% block content %}
+  <div class="main-container">
+    <!-- intro section starts here -->
+    <div class="main-intro-1">
+      <div class="container main-container-1">
+        <div class="row intro-row">
+          <div class="col-sm-6 intro-img-col-1">
+            <img src="{% static "images/c.png" %}" alt="">
+          </div>
+          <div class="col-sm-6 intro-text-col-1">
+            <h3 class="intro-title">What is iulforum.tech ?</h3>
+            <p class="intro-description">IUL Forum is a platform where students can gain
+              information about Computer Science . BCA Notes
+              provides simple and easy notes and you will find
+              numerous subjects related to computer science
+              such as programming in C, Programming in C++,
+              Computer Networks, Management Information System,
+              Visual Basic, And System Analysis and Design and
+              many more.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="main-intro-2">
+      <div class="container main-container-2">
+        <div class="row intro-row">
+          <div class="col-sm-6 intro-text-col-2">
+            <h3 class="intro-title">Who am I ?</h3>
+            <p class="intro-description">
+              That would be me ! <a class="text-decoration-none text-danger" target="_blank" href="http://geekyasif.github.io/">Mohammad Asif</a> The creator of this site. I am a second year bachelor of computer application student that has a passion for programming and everything tech! Teaching and writing guides is my favorite past-time and allows for me to reinforce my learning while providing value to all of my supporters. As I learn and develop my programming skills I will be sharing all my knowledge on this site and on my channel completely for FREE!
+            </p>
+          </div>
+          <div class="col-sm-6 intro-img-col-2">
+            <img src="{% static "images/b.png" %}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- intro section ends here -->
+    <!-- main card section starts here -->
+
+    <div class="cards">
+      <div class="container">
+        <h3 class="text-center my-5 intro-title">Are you looking for these ?</h3>
+        <div class="row main-content-row ">
+          <div class="col-sm-4 main-contain-col text-center">
+            <div class="card shadow  mb-5 bg-body rounded" style="width: 18rem;">
+              <img src="{% static 'images/blog.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <a class="btn btn-outline-danger " href="blog/" role="button">Explore Blog</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 main-contain-col text-center">
+            <div class="card shadow  mb-5 bg-body rounded" style="width: 18rem;">
+              <img src="{% static 'images/notes.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <a class="btn btn-outline-danger " href="notes/" role="button">Download Notes</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 main-contain-col text-center ">
+            <div class="card shadow  mb-5 bg-body rounded" style="width: 18rem;">
+              <img src="{% static 'images/paper2.png' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <a class="btn btn-outline-danger " href="papers/" role="button">Question Papers</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- main card section end here -->
+
+
+
+  </div>
+{% endblock  %}
+
+ 
