@@ -25,7 +25,7 @@ SECRET_KEY = '8a@t@4^4kq8&p7a&3np8_$png&*t=u5pv*a!i8msec7+#=xi4-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['iulforum.azurewebsites.net', ,www.iulforum.tech, 'iulforum.tech', '127.0.0.1']
+ALLOWED_HOSTS = ['iulforum.azurewebsites.net', 'www.iulforum.tech', 'iulforum.tech', '127.0.0.1']
 
 
 # Application definition
@@ -125,8 +125,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_URL	=	'/media/'
-MEDIA_ROOT	=	os.path.join(BASE_DIR,	'media/')
+MEDIA_URL = '/media/'
+MEDIA_ROOT	= os.path.join(BASE_DIR,	'media/')
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
